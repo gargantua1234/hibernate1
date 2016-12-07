@@ -11,8 +11,8 @@ import pl.ablech.nauka.utils.HibernateUtils;
 public class Main {
     public static void main(String[] args) {
         Student student = new Student();
-        student.setName("Andrew");
-        student.setSurname("Student");
+        student.setName("Homer");
+        student.setSurname("Simpson");
         student.setDeansGroup("AI1001");
 
         SessionFactory sessionFactory = HibernateUtils.getSessionFactory();
