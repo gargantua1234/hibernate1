@@ -14,9 +14,14 @@ public class HibernateUtils {
 
     private static SessionFactory buildSessionFactory(){
         try{
-            ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
-                    .configure().build();
-            return new Configuration().buildSessionFactory(serviceRegistry);
+            //jesli chce zaladowac dane z ineggo plika properties
+//            ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
+//                    .configure("<nazwa propertiesa>").build();
+//            return new Configuration().buildSessionFactory(serviceRegistry);
+
+
+            //jesli mam tylko pliki hibernate.cfg.xml i hibernate.properties
+            return new Configuration().configure().buildSessionFactory();
         }
         catch(Throwable ex){
             throw new ExceptionInInitializerError(ex);
