@@ -16,7 +16,7 @@ public class HibernateUtils {
         try{
             //jesli chce zaladowac dane z ineggo plika properties
 //            ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
-//                    .configure("<nazwa propertiesa>").build();
+//                    .configure().loadProperties("<nazwa propertiesa>").build();
 //            return new Configuration().buildSessionFactory(serviceRegistry);
 
 
