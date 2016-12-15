@@ -16,5 +16,6 @@
       <mapping class="pl.ablech.nauka.entities.Student"/>
       <mapping class="pl.ablech.nauka.entities.Person"/>
       <mapping class="pl.ablech.nauka.entities.Address"/>
+      <mapping class="pl.ablech.nauka.entities.Collage"/>
   </session-factory>
 </hibernate-configuration>

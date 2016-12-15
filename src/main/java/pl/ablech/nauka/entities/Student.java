@@ -24,6 +24,18 @@ public class Student {
     @Column(name = "deans_group")
     private String deansGroup;
 
+    @ManyToOne()
+    @JoinColumn(name = "id_collage")
+    private Collage collage;
+
+    public Collage getCollage() {
+        return collage;
+    }
+
+    public void setCollage(Collage collage) {
+        this.collage = collage;
+    }
+
     public int getId() {
         return id;
     }
