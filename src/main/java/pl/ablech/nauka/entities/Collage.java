@@ -1,6 +1,7 @@
 package pl.ablech.nauka.entities;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -22,6 +23,10 @@ public class Collage {
     @OneToMany(targetEntity = Student.class, mappedBy = "collage",
                 cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Student> students;
+
+    public Collage (){
+        this.students = new ArrayList<>();
+    }
 
     public int getIdCollage() {
         return idCollage;
